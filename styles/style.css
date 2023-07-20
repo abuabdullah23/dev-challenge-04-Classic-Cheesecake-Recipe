@@ -63,7 +63,8 @@ body {
 }
 
 .main-content {
-    flex: 3;
+    /* flex: 3; */
+    width: 70%;
 }
 
 .ingredients-section h2,
@@ -148,6 +149,51 @@ h3 {
     margin: 50px 0px;
 }
 
+/* Sidebar css */
 .sidebar {
-    flex: 1;
+    /* flex: 1; */
+    width: 30%;
+    height: fit-content;
+    padding: 58px 52px;
+    border-radius: 12px;
+    background: #FFF;
+    box-shadow: 0px 0px 20px 0px #0000001a;
+
+    display: flex;
+    gap: 48px;
+    flex-direction: column;
+}
+
+.sidebar-list {
+    display: flex;
+    justify-content: start;
+    gap: 16px;
+    align-items: center;
+}
+
+.sidebar-list h3,
+h4 {
+    margin: 0;
+}
+
+.sidebar-list img {
+    width: 36px;
+    height: 36px;
+}
+
+.sidebar-list h4 {
+    color: var(--gray-4, #BDBDBD);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.sidebar-list h3 {
+    color: var(--gray-1, #333);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
