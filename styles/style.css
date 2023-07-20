@@ -10,7 +10,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    max-width: 1440px;
+    max-width: 100%;
     max-height: 100vh;
     margin: 0 auto;
     padding-top: 40px;
@@ -150,15 +150,18 @@ h3 {
 }
 
 /* Sidebar css */
-.sidebar {
-    /* flex: 1; */
+.sidebar-container {
     width: 30%;
     height: fit-content;
     padding: 58px 52px;
     border-radius: 12px;
     background: #FFF;
     box-shadow: 0px 0px 20px 0px #0000001a;
+}
 
+.sidebar {
+    /* flex: 1; */
+    margin-top: 58px;
     display: flex;
     gap: 48px;
     flex-direction: column;
@@ -196,4 +199,87 @@ h4 {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+}
+
+
+/* responsive */
+@media screen and (max-width : 576px) {
+
+    body {
+        width: 100%;
+        padding: 25px 12px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    /* Recipe Container CSS for Mobile */
+    .header-title {
+        font-size: 24px;
+    }
+
+    .header-subtitle {
+        width: 100%;
+    }
+
+    .banner-container {
+        margin-top: 18px;
+    }
+
+
+    .recipe-container {
+        flex-direction: column-reverse;
+        margin-top: 16px;
+        padding: 10px;
+    }
+
+
+    .main-content {
+        width: 100%;
+    }
+
+
+    /* Sidebar css */
+    .sidebar-container {
+        height: fit-content;
+        width: 100%;
+        padding: 10px 12px;
+        background: #FFF;
+        box-shadow: none;
+        gap: 20px;
+        flex-wrap: wrap;
+
+    }
+
+    .sidebar {
+        margin-top: 20px;
+        gap: 20px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .sidebar-list {
+        gap: 10px;
+    }
+
+
+    .sidebar-list img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .sidebar-list h4 {
+        font-size: 8px;
+    }
+
+    .sidebar-list h3 {
+        font-size: 10px;
+    }
+
+    .source-link {
+        width: 100%;
+        padding-right: 10px;
+    }
+
 }
