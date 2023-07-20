@@ -201,6 +201,13 @@ h4 {
     line-height: normal;
 }
 
+footer{
+    text-align: center;
+    padding: 30px 30px;
+    color: #828282;
+    font-weight: 500;
+
+}
 
 /* responsive */
 @media screen and (max-width : 576px) {
